@@ -7,7 +7,13 @@ const clearHTML = (html) => {
   news.insertAdjacentHTML("afterbegin", html);
 };
 
+const loadMessage = (message) => {
+  html = `<p style="color:white; text-align:center;">${message}</p>`;
+  news.insertAdjacentHTML("afterbegin", html);
+};
+
 const fetchBlogs = async () => {
+  loadMessage("Loading...🚀");
   try {
     const response = await fetch("https://calm-inlet-18337.herokuapp.com/");
     if (!response.ok) {
@@ -37,7 +43,7 @@ const renderBlogs = async () => {
 
   //show error if it fails
   if (!blogs.success) {
-    html = `<p style="color:white; text-align:center">${blogs.message} ☹</p>`;
+    html = `<p style="color:white; text-align:center">${blogs.message} 🚩</p>`;
     clearHTML(html);
     return;
   }
