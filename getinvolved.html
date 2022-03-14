@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Open Graph Tags-->
-<meta property="og:title" content="Cohere" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://i.imgur.com/fULc8V9.jpg" />
-<meta property="og:url" content="https://www.wearecohere.org" />
-
-<title>Get Involved</title>
-
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Open Graph Tags-->
+    <meta property="og:title" content="Cohere" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://i.imgur.com/fULc8V9.jpg" />
+    <meta property="og:url" content="https://www.wearecohere.org" />
+
+    <title>Get Involved</title>
+
     <!-- Loading Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
             
@@ -22,95 +22,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet"> 
 
-    <!-- Loading Morganite-->
-    <style>
-        @font-face {
-            font-family: "Morganite";
-            src: url(./Morganite-Bold.ttf) format("truetype");
-        }
-        h1 {
-            font-family: 'Morganite', sans-serif;
-            font-size: 16vmin;
-        }
-
-        h2 {
-            font-family: 'Morganite', sans-serif;
-            font-size: 10vmin;
-        }
-
-        h3 {
-            font-family: 'Morganite', sans-serif;
-            font-size: 7vmin;
-        }
-
-        h4 {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        p {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        button {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        
-
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/components/navbar.js" defer></script>
+    <script src="js/components/footer.js" defer></script>
 
 </head>
 
 <body>
 
-<!-- Navbar  -->
-<div class="container-fluid" style="background-color: #ff9343;" > <!--; #282828 -->
-    <div class="d-flex flex-row justify-content-end align-items-center">
-        
-        <!-- Donate Button -->
-        <div class="col-md-1">
-            <a href="https://cohere.enthuse.com/donate#!/" style="text-decoration: none!important;"><h4 style="color: white;">Donate</h4></a>
-        </div>
+    <!-- Navbar  -->
+    <navbar-component></navbar-component>
+    <!-- End of Nav Bar-->
 
-        <!-- Dropdown Menu-->
-        <div class="col-md-1">
-            <h4 style="color:white;" class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Menu
-                </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="./aboutus.html">About Us</a></li>
-            <li><a class="dropdown-item" href="./getinvolved.html">Get Involved</a></li>
-            <li><a class="dropdown-item" href="https://news.wearecohere.org">News</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="./index.html">Home</a></li>
-            </ul>
-        </h4>
-        </div>
-
-    </div>
-</div>
-<!-- End of Nav Bar-->
-
-
-    <style>
-        .hovercontent {
-            display: none;
-        }
-
-        .involve:hover .hovercontent {
-            display: block;
-        }
-        
-        .involve h2 {
-            color: white;
-        }
-
-        .involve p {
-            color: white;
-        }
-    
-    </style>
 
     <!--Get Involved-->
     <div class="container-fluid" style="height: 95vh; background-image: url('./images/involved.jpg'); background-size: cover; background-position: center top; ">
@@ -126,130 +49,97 @@
 
         <div class="row d-flex justify-content-center pt-5 pb-4">
             <div class="col-7 text-center">
-                <img src="./chevron.png" style="width: 10%;">
+                <img src="./images/chevron.png" style="width: 10%;">
             </div>
         </div>
     </div>
 
 
-<!-- Options Section-->
-<div class="container-fluid" style="background-color: #282828;">
-        <div class="row d-flex justify-content-center py-5">
-            <div class="col-md-3 p-4 m-3 text-center imghover">
-                <button onclick="window.location='https://cohere.enthuse.com/donate#!/';" class="btn btn-outline-light btn-lg">DONATE</button>
-                <p style="color:white;" class="mt-3">Give the gift of independence today with a small monthly donation.</p>
-                <img src="./images/gi_donate.png" class="img-fluid pt-3 imghover">
+    <!-- Options Section-->
+    <div class="container-fluid" style="background-color: #282828;">
+            <div class="row d-flex justify-content-center py-5">
+                <div class="col-md-3 p-4 m-3 text-center imghover">
+                    <button onclick="window.location='https://cohere.enthuse.com/donate#!/';" class="btn btn-outline-light btn-lg">DONATE</button>
+                    <p style="color:white;" class="mt-3">Give the gift of independence today with a small monthly donation.</p>
+                    <img src="./images/gi_donate.png" class="img-fluid pt-3 imghover">
 
+                </div>
+                <div class="col-md-3 p-4 m-3 text-center">
+                    <button onclick="window.location='https://cohere.enthuse.com/fundraising/start#!/';" class="btn btn-outline-light btn-lg">FUNDRAISE</button>
+                    <p style="color:white;" class="mt-3">Looking for change? You can help us change futures.</p>
+                    <img src="./images/gi_fund.png" class="img-fluid pt-3">
+
+                </div>
+                <div class="col-md-3 p-4 m-3 text-center">
+                    <button onclick="window.location='mailto:volunteer@wearecohere.org';" class="btn btn-outline-light btn-lg">VOLUNTEER</button>
+                    <p style="color:white;" class="mt-3">Share you time and skills. Our future looks better with you in it.</p>
+                    <img src="./images/gi_vol.png" class="img-fluid pt-3">
+                </div>
             </div>
-            <div class="col-md-3 p-4 m-3 text-center">
-                <button onclick="window.location='https://cohere.enthuse.com/fundraising/start#!/';" class="btn btn-outline-light btn-lg">FUNDRAISE</button>
-                <p style="color:white;" class="mt-3">Looking for change? You can help us change futures.</p>
-                <img src="./images/gi_fund.png" class="img-fluid pt-3">
-
-            </div>
-            <div class="col-md-3 p-4 m-3 text-center">
-                <button onclick="window.location='mailto:volunteer@wearecohere.org';" class="btn btn-outline-light btn-lg">VOLUNTEER</button>
-                <p style="color:white;" class="mt-3">Share you time and skills. Our future looks better with you in it.</p>
-                <img src="./images/gi_vol.png" class="img-fluid pt-3">
-            </div>
-        </div>
-</div>
-
-<!-- Events-->
-<div class="container-fluid" style="background-color: #ff6865;">
-    <div class="row">
-
-        <div class="col-6 d-none d-md-block" style="background-image: url('./images/events.jpg'); background-size: cover; background-position: center top;">
-        </div>
-
-        <div class="col-md-6 p-5">
-            <h1 class="text-start" style="color:white;">EVENTS</h1>
-            <p class="lead text-start" style="color:white;">
-                This year we will be hosting events to support our partners and involve our community.<br />
-                With your support, we can change charity for the better.<br /><br />
-                Get the latest updates to find out what’s happening by signing up to our newsletter.</p>
-            </p>
-
-            
-<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup1{background:#ff6865; clear:left; font-family: 'Space Grotesk';  width:600px;}
-    #mc_embed_signup1 label {font-family: 'Space Grotesk'; color: white;}
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup1">
-<form action="https://wearecohere.us6.list-manage.com/subscribe/post?u=3e8c7c706f&amp;id=5e20537c9d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-<div class="mc-field-group">
-	<label for="mce-FNAME">First Name </label><br />
-	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-</div>
-<div class="mc-field-group">
-	<label for="mce-LNAME">Last Name </label><br />
-	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address* </label><br />
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e8c7c706f_5e20537c9d" tabindex="-1" value=""></div><br />
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-light"></div>
     </div>
-</form>
-</div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
 
-        </div>
+    <!-- Events-->
+    <div class="container-fluid" style="background-color: #ff6865;">
+        <div class="row">
 
-    </div>
-</div>
+            <div class="col-6 d-none d-md-block" style="background-image: url('./images/events.jpg'); background-size: cover; background-position: center top;">
+            </div>
 
-    <!-- Contacts / Footer -->
-    <div class="container-fluid" style="background-color: #72ccca;">
-        <div class="container">
-            <div class="d-flex justify-content-between row pt-3">
-                <div class="col-md-2">
-                    <h3>CONTACT US</h3>
-                    <p><b>Kenya Office</b><br />
-                    Wamagata Court<br /> 
-                    Woodley, Nairobi <br /> 
-                    P.O Box 61716-00200
+            <div class="col-md-6 p-5">
+                <h1 class="text-start" style="color:white;">EVENTS</h1>
+                <p class="lead text-start" style="color:white;">
+                    This year we will be hosting events to support our partners and involve our community.<br />
+                    With your support, we can change charity for the better.<br /><br />
+                    Get the latest updates to find out what’s happening by signing up to our newsletter.</p>
                 </p>
-                </div>
 
-                <div class="col-md-2">
-                    <h3>_</h3>
-                    <p><b>Uganda Office</b><br />
-                    Hanlon Road<br />
-                    Nsambya, Kampala
-                </p>
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <h3>STAY IN TOUCH</h3>
-                    <button onclick="window.location='http://eepurl.com/hVLcTb';" class="btn btn-outline-dark">Sign Up to Our Mailing List</button>
-
-                </div>
-
-                <style>.linkage a {text-decoration: none; color: #282828;}</style>
-                <div class="col-md-3 linkage text-center">
-                    <h3>FOLLOW US</h3>
-                    <h3><a href="https://www.instagram.com/wearecohere_org/"><i class="bi bi-instagram me-3"></a></i><a href="https://twitter.com/WeAreCohere_Org"><i class="bi bi-twitter me-3"></i></a>
-                    <a href="https://www.linkedin.com/company/79070903"><i class="bi bi-linkedin me-3"></i></a><a href="https://www.facebook.com/CohereOrg"><i class="bi bi-facebook me-3"></i></a></h3>
-
-                </div>
-            </div>
-        </div>
-
+                
+    <!-- Begin Mailchimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup1{background:#ff6865; clear:left; font-family: 'Space Grotesk';  width:600px;}
+        #mc_embed_signup1 label {font-family: 'Space Grotesk'; color: white;}
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup1">
+    <form action="https://wearecohere.us6.list-manage.com/subscribe/post?u=3e8c7c706f&amp;id=5e20537c9d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+    <div class="mc-field-group">
+        <label for="mce-FNAME">First Name </label><br />
+        <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
     </div>
+    <div class="mc-field-group">
+        <label for="mce-LNAME">Last Name </label><br />
+        <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+    </div>
+    <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address* </label><br />
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    </div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e8c7c706f_5e20537c9d" tabindex="-1" value=""></div><br />
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-light"></div>
+        </div>
+    </form>
+    </div>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <!--End mc_embed_signup-->
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer-component></footer-component>
+    <!--End Footer-->
 
     <!-- Bootstrap Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+
+</html>

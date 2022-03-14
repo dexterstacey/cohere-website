@@ -1,0 +1,68 @@
+/* Loading Morganite and Assigning Fonts */
+@font-face {
+  font-family: "Morganite";
+  src: url(../fonts/Morganite-Bold.ttf) format("truetype");
+}
+h1 {
+  font-family: "Morganite", sans-serif;
+  font-size: 16vmin;
+}
+
+h2 {
+  font-family: "Morganite", sans-serif;
+  font-size: 10vmin;
+}
+
+h3 {
+  font-family: "Morganite", sans-serif;
+  font-size: 7vmin;
+}
+
+h4 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+button {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* IMPACT BOXES */
+.impactbox h2 {
+  line-height: 2vmin;
+}
+
+.impactbox h4 {
+  color: #ff9343;
+}
+
+.impactbox p {
+  font-size: 2vmin;
+}
+
+/* GET INVOLVED PAGE */
+.hovercontent {
+  display: none;
+}
+
+.involve:hover .hovercontent {
+  display: block;
+}
+
+.involve h2 {
+  color: white;
+}
+
+.involve p {
+  color: white;
+}
+
+/* MEET THE TEAM SECTION */
+#meet-the-team {
+  height: 100vh;
+  /* width: 100vw; */
+  background-color: #ff6865;
+}
