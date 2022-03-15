@@ -1,4 +1,4 @@
-const news = document.querySelector(".news");
+const news = document.querySelector(".news__blog");
 
 const clearHTML = (html) => {
   // clear the contents
@@ -55,11 +55,13 @@ const renderBlogs = async () => {
     if (index > colors.length - 1) index = 0;
 
     html += `
-      <div class="col-3 newsitem p-2 m-2" style="background-color: ${colors[index]};">
-        <div class="titleholder"><h4>${el.name}</h4></div>
+      <div class="news__item" style="background-color: ${colors[index]};">
+        <h4>${el.name}</h4>
         <a href="https://news.wearecohere.org${el.permalink}"><img src="${el.image}" referrerpolicy="no-referrer"></a>
       </div>
       `;
+
+    console.log(el);
   });
 
   clearHTML(html);

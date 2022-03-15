@@ -56,7 +56,7 @@
         background-position: center top;
       "
     >
-      <div class="row pt-5">
+      <div class="row pt-5" style="animation: moveInLeft 1s">
         <h1
           class="text-start ps-5 pt-5"
           style="color: white; line-height: 13vmin"
@@ -73,7 +73,7 @@
           </p>
           <button
             onclick="window.location='https://www.wearecohere.org/getinvolved.html';"
-            class="btn btn-lg btn-outline-light"
+            class="btn btn-lg btn-outline-light u-text-mid"
           >
             Get Involved
           </button>
@@ -83,82 +83,72 @@
 
     <!-- We Are Cohere-->
     <section id="we-are-cohere">
-      <div class="container-fluid" style="background-color: #ff9343">
-        <div class="container">
-          <div
-            class="row d-flex justify-content-between align-items-center py-5"
-          >
-            <div class="col-2 d-none d-md-block">
-              <img src="./images/TagXP.png" style="width: 70%" />
-            </div>
-            <div class="col-md-7 text-center">
-              <h1 class="text-center" style="color: white">WE ARE COHERE</h1>
-              <p class="lead text-center pb-5" style="color: white">
-                At the beginning of 2022 Xavier Project joined forces with Urban
-                Refugees to become COHERE. We realised that by sharing resources
-                and expertise we could do more to support the growth of
-                refugee-led organisations, all whilst reducing costs. This way
-                more money can go directly to our refugee-led partners. We want
-                them to be in the driving seat. Together we want to smash the
-                cycle of dependency. We hope you’ll join us.
-              </p>
-              <a href="#what-we-do">
-                <img src="./images/chevron.png" style="width: 10%" />
-              </a>
-            </div>
-            <div class="col-2 d-none d-md-block">
-              <img src="./images/TagUR.png" style="width: 70%" />
-            </div>
-          </div>
+      <div class="intro u-center">
+        <img class="intro__image" src="./images/TagXP.png" />
+        <div class="col-md-7 text-center">
+          <h1 class="text-center intro__header" style="color: white">
+            WE ARE COHERE
+          </h1>
+          <p class="lead text-center pb-5" style="color: white">
+            At the beginning of 2022 Xavier Project joined forces with Urban
+            Refugees to become COHERE. We realised that by sharing resources and
+            expertise we could do more to support the growth of refugee-led
+            organisations, all whilst reducing costs. This way more money can go
+            directly to our refugee-led partners. We want them to be in the
+            driving seat. Together we want to smash the cycle of dependency. We
+            hope you’ll join us.
+          </p>
+          <a href="#what-we-do">
+            <img class="chevron" src="./images/chevron.png" />
+          </a>
         </div>
+        <img class="intro__image" src="./images/TagUR.png" />
       </div>
     </section>
 
     <!-- What we Do -->
     <section id="what-we-do">
-      <div class="container-fluid" style="background-color: #ff6865">
-        <div class="container">
-          <div class="row py-3">
-            <h1 class="text-center" style="color: white">WHAT WE DO</h1>
-            <div class="col-3 text-center">
-              <h2 style="color: white; font-size: 4vmax">FUNDING</h2>
-              <img
-                src="./images/wwd_funding.png"
-                alt="Refugees community direct funding"
-                style="width: 100%"
-              />
-            </div>
-            <div class="col-3 text-center">
-              <h2 style="color: white; font-size: 4vmax">CAPACITY</h2>
-              <img
-                src="./images/wwd_capacity.png"
-                alt="Localisation training for refugees"
-                style="width: 100%"
-              />
-            </div>
-            <div class="col-3 text-center">
-              <h2 style="color: white; font-size: 4vmax">COORDINATION</h2>
-              <img
-                src="./images/wwd_coordination.png"
-                alt="Refugee leaders meeting"
-                style="width: 100%"
-              />
-            </div>
-            <div class="col-3 text-center">
-              <h2 style="color: white; font-size: 4vmax">ADVOCACY</h2>
-              <img
-                src="./images/wwd_advocacy.png"
-                alt="Refugee voices"
-                style="width: 100%"
-              />
-            </div>
+      <div class="work">
+        <h1 class="text-center" style="color: white">WHAT WE DO</h1>
+        <div class="work__elements">
+          <div class="work__item">
+            <h2>FUNDING</h2>
+            <img
+              class="work__item--image"
+              src="./images/wwd_funding.png"
+              alt="Refugees community direct funding"
+            />
           </div>
-          <div class="row d-flex justify-content-center pb-4">
-            <div class="col-7 text-center">
-              <a href="#smashing-cycle">
-                <img src="./images/chevron.png" style="width: 10%" />
-              </a>
-            </div>
+          <div class="work__item">
+            <h2>CAPACITY</h2>
+            <img
+              class="work__item--image"
+              src="./images/wwd_capacity.png"
+              alt="Localisation training for refugees"
+            />
+          </div>
+          <div class="work__item">
+            <h2>COORDINATION</h2>
+            <img
+              class="work__item--image"
+              src="./images/wwd_coordination.png"
+              alt="Refugee leaders meeting"
+            />
+          </div>
+          <div class="work__item">
+            <h2>ADVOCACY</h2>
+            <img
+              class="work__item--image"
+              src="./images/wwd_advocacy.png"
+              alt="Refugee voices"
+            />
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center pb-4">
+          <div class="col-7 text-center">
+            <a href="#smashing-cycle">
+              <img class="chevron" src="./images/chevron.png" />
+            </a>
           </div>
         </div>
       </div>
@@ -166,84 +156,73 @@
 
     <!-- Smashing Cycle-->
     <section id="smashing-cycle">
-      <div class="container-fluid" style="background-color: #72ccca">
-        <div class="row">
-          <div
-            class="col-6 d-none d-md-block"
-            style="
-              background-image: url('./images/cycle.jpg');
-              background-size: cover;
-              background-position: center top;
-            "
-          ></div>
-          <div class="col-md-6 p-5">
-            <h2 class="pt-5" style="color: #282828; line-height: 8vmin">
-              HELP US SMASH THE CYCLE <br />
-              OF DEPENDENCY!
-            </h2>
-            <p class="lead" style="color: #282828">
-              Your contribution enables refugees to help themselves to a better
-              future on their own terms. So whether it’s going to school,
-              learning a new skill or creating a difference for the local
-              community, it’s about being able to make their own choices towards
-              a better future. And we hope you choose to help.
-            </p>
-            <button
-              onclick="window.location='https://cohere.enthuse.com/donate#!/';"
-              class="btn btn-lg btn-outline-light"
-            >
-              Donate
-            </button>
-          </div>
+      <div class="dependency">
+        <img src="./images/cycle.jpg" alt="" class="dependency__image" />
+
+        <div class="dependency__text">
+          <h2 class="pt-5">
+            HELP US SMASH THE CYCLE <br />
+            OF DEPENDENCY!
+          </h2>
+          <p class="lead">
+            Your contribution enables refugees to help themselves to a better
+            future on their own terms. So whether it’s going to school, learning
+            a new skill or creating a difference for the local community, it’s
+            about being able to make their own choices towards a better future.
+            And we hope you choose to help.
+          </p>
+          <button
+            onclick="window.location='https://cohere.enthuse.com/donate#!/';"
+            class="btn btn-lg btn-outline-light u-text-mid"
+            style="width: 20%"
+          >
+            Donate
+          </button>
+          <a href="#impact">
+            <img class="chevron" src="./images/chevron.png" />
+          </a>
         </div>
       </div>
     </section>
 
     <section id="impact">
-      <div class="container-fluid pt-3" style="background-color: #f7f7f7">
-        <!--#ff9343;-->
+      <div class="container-fluid pt-3">
+        <h1 class="impact__header">IMPACT</h1>
 
-        <div class="container text-center">
-          <h1 style="color: #ff9343">IMPACT</h1>
-        </div>
-        <!--Row 1-->
-        <div class="row d-flex justify-content-center">
-          <div class="col-3 text-center impactbox">
-            <h2><i class="bi bi-people-fill"></i></h2>
+        <div class="impact__grid">
+          <div class="impact__grid--item">
+            <i class="bi bi-people-fill"></i>
             <h4>33</h4>
             <p>Partner refugee-led organisations</p>
           </div>
-          <div class="col-3 text-center impactbox">
-            <h2><i class="bi bi-cash-stack"></i></h2>
+          <div class="impact__grid--item">
+            <i class="bi bi-cash-stack"></i>
             <h4>$500,000</h4>
             <p>
               In direct funding to refugee-led <br />
               organisations in 2022
             </p>
           </div>
-          <div class="col-3 text-center impactbox">
-            <h2><i class="bi bi-globe"></i></h2>
+          <div class="impact__grid--item">
+            <i class="bi bi-globe"></i>
             <h4>4</h4>
             <p>Countries: Kenya, Uganda, Malawi, South Africa</p>
           </div>
-        </div>
-        <!--Row 2-->
-        <div class="row d-flex justify-content-center">
-          <div class="col-3 text-center impactbox">
-            <h2><i class="bi bi-bank2"></i></h2>
+          <div class="impact__grid--item">
+            <i class="bi bi-bank2"></i>
             <h4>8</h4>
             <p>
               Institutional donors committed to directly fund refugee-led
               organisations
             </p>
           </div>
-          <div class="col-3 text-center impactbox">
-            <h2><i class="bi bi-person-heart"></i></h2>
+          <div class="impact__grid--item">
+            <i class="bi bi-person-heart"></i>
             <h4>24,479</h4>
             <p>People reached in 2021</p>
           </div>
-          <div class="col-3 text-center impactbox pb-4">
-            <h2><i class="bi bi-laptop"></i></h2>
+          <div class="impact__grid--item">
+            <i class="bi bi-laptop"></i>
             <h4>5</h4>
             <p>
               Open-source training courses created to strengthen refugee
@@ -255,7 +234,11 @@
         <div class="row d-flex justify-content-center pb-4">
           <div class="col-7 text-center">
             <a href="#reframe">
-              <img src="./images/chevronorange.png" style="width: 10%" />
+              <img
+                class="chevron"
+                src="./images/chevronorange.png"
+                style="width: 10%"
+              />
             </a>
           </div>
         </div>
@@ -264,87 +247,38 @@
 
     <!-- Reframe-->
     <section id="reframe">
-      <div class="container-fluid" style="background-color: #ff6865">
-        <div class="row">
-          <div class="col-md-6 p-5">
-            <h1 class="pt-5" style="color: #282828; line-height: 13vmin">
-              REFRAME
-            </h1>
-            <p class="lead" style="color: #282828">
-              Together with our partners, COHERE has created Reframe, a platform
-              that aims to showcases Refugee-Led Organisations and connects them
-              to international donors, networks and opportunities.
-            </p>
-            <button
-              onclick="window.location='https://reframe.network';"
-              class="btn btn-lg btn-outline-light"
-            >
-              Visit
-            </button>
-          </div>
-          <div
-            class="col-6 d-none d-md-block"
-            style="
-              background-image: url('./images/reframe.jpg');
-              background-size: cover;
-              background-position: center top;
-            "
+      <div class="reframe">
+        <div class="reframe__text">
+          <h1>REFRAME</h1>
+          <p>
+            Together with our partners, COHERE has created Reframe, a platform
+            that aims to showcases Refugee-Led Organisations and connects them
+            to international donors, networks and opportunities.
+          </p>
+          <button
+            onclick="window.location='https://reframe.network';"
+            class="btn btn-lg btn-outline-light u-text-mid"
+            style="width: 20%"
           >
-            <!---->
-          </div>
+            Visit
+          </button>
         </div>
+        <img src="./images/reframe.jpg" class="dependency__image" alt="" />
       </div>
     </section>
 
     <!-- News-->
-    <!-- Newsitem style-->
-    <style>
-      .newsitem {
-        text-align: center;
-      }
-      .newsitem h4 {
-        color: #282828;
-        font-size: 3vmin;
-      }
-      .newsitem img {
-        width: 100%;
-      }
-      .titleholder {
-        height: 10vmin;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-
     <section id="news">
-      <div class="container-fluid" style="background-color: #282828">
-        <div class="row text-center pt-4">
-          <h1 style="color: white">NEWS</h1>
-        </div>
-        <div class="news row d-flex justify-content-center pb-3">
-          <!-- <div class="col-3 newsitem p-2 m-2" style="background-color: #ff9343;">
-                    <div class="titleholder"><h4>Introducing... Cohere</h4></div>
-                    <a href="https://news.wearecohere.org/post/we-are-cohere/"><img src="./wearecohere.png"></a>
-                </div>
-                <div class="col-3 newsitem p-2 m-2" style="background-color: #72ccca;">
-                    <div class="titleholder"><h4>A Letter from our Founder & CEO</h4></div>
-                    <a href="https://news.wearecohere.org/post/looking-back-and-moving-forward-a-note-from-our-founder-ceo/"><img src="./EdBlogImage.png"></a>
-                </div>
-                <div class="col-3 newsitem p-2 m-2" style="background-color: #ff6865;">
-                    <div class="titleholder"><h4>Reframing the way aid works</h4></div>
-                    <a href="https://news.wearecohere.org/post/reframing-the-way-humanitarian-aid-works/"><img src="./ReframeBlog.png"></a>
-                </div> -->
-        </div>
-        <div class="row d-flex justify-content-center pb-5">
-          <div class="col-md-4">
-            <button
-              onclick="window.location='https://cohere.enthuse.com/donate#!/';"
-              class="btn btn-outline-light btn-lg"
-            >
-              Help us Smash the Cycle of Dependency
-            </button>
-          </div>
+      <div class="container-fluid">
+        <h1 class="news__title">NEWS</h1>
+        <div class="news__blog"></div>
+        <div class="news__btn">
+          <button
+            onclick="window.location='https://cohere.enthuse.com/donate#!/';"
+            class="btn btn-outline-light btn-lg u-text-mid"
+          >
+            Help us Smash the Cycle of Dependency
+          </button>
         </div>
       </div>
     </section>
