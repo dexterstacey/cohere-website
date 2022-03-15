@@ -237,6 +237,17 @@ button {
   padding: 3rem;
 }
 
+.news__title--secondary {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.news__title--secondary:hover {
+  cursor: pointer;
+  color: white;
+}
+
 .news__blog {
   padding: 3rem;
   display: flex;
