@@ -1,5 +1,58 @@
-const news = document.querySelector(".news__blog");
+"use strict";
 
+//TODO: Arrange functions in their own files
+
+const news = document.querySelector(".news__blog");
+const imgTargets = document.querySelectorAll("img[data-src]");
+
+//---------------------------------------------------------------------------------------
+// LAZY LOADING IMAGES SECTION
+
+const loadImage = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.src = entry.target.dataset.src;
+
+      // unobserve
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+const imgObserver = new IntersectionObserver(loadImage, {
+  // play around with this
+  threshold: 0.5,
+});
+
+imgTargets.forEach((img) => {
+  imgObserver.observe(img);
+});
+
+//----------------------------------------------------------------------------------------
+// Reavel sections
+const allSections = document.querySelectorAll(".section");
+
+const revealSection = (entries, observer) => {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1,
+});
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  // section.classList.add("section--hidden");
+});
+
+//-----------------------------------------------------------------------------------------
+// READ BLOGS SECTION
 const clearHTML = (html) => {
   // clear the contents
   news.innerHTML = "";
@@ -8,6 +61,7 @@ const clearHTML = (html) => {
 };
 
 const loadMessage = (message) => {
+  let html;
   html = `<p style="color:white; text-align:center;">${message}</p>`;
   news.insertAdjacentHTML("afterbegin", html);
 };
@@ -38,6 +92,9 @@ const renderBlogs = async () => {
 
   const colors = ["#ff9343", "#72ccca", "#ff6865"];
 
+  //TODO: Clean this when files are arranged
+  if (!news) return;
+
   // fetch blogs
   const blogs = await fetchBlogs();
 
@@ -63,8 +120,6 @@ const renderBlogs = async () => {
         <a href="https://news.wearecohere.org${el.permalink}"><img src="${el.image}" referrerpolicy="no-referrer"></a>
       </div>
       `;
-
-    console.log(el);
   });
 
   clearHTML(html);
