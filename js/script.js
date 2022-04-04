@@ -110,7 +110,7 @@ const renderBlogs = async () => {
   // Limit to only 3 articles
   const firstThreeArticles = data.slice(0, 3);
 
-  firstThreeArticles.reverse().forEach((el, index) => {
+  firstThreeArticles.forEach((el, index) => {
     // reset colors aftee every 3 blogs
     if (index > colors.length - 1) index = 0;
 
