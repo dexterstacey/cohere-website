@@ -140,7 +140,7 @@ button {
   width: 10%;
 }
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 56.25em) {
   .intro {
     flex-direction: column;
     justify-content: space-around;
@@ -175,7 +175,7 @@ button {
   padding: 3rem;
 }
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 56.25em) {
   .work__elements {
     width: 100%;
     display: flex;
@@ -231,7 +231,7 @@ button {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 56.25em) {
   .dependency__image {
     display: none;
   }
@@ -452,6 +452,97 @@ button {
   font-size: 1.6rem !important;
   line-height: 3rem;
   margin-bottom: 3rem;
+}
+
+/* ABOUT US PAGE */
+#about-us {
+  position: relative;
+  height: 95vh;
+  background-image: url("../images/aboutus.jpg");
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+}
+
+.aboutus__box {
+  position: absolute;
+  color: white;
+  width: 50%;
+  height: 40%;
+  top: 10%;
+  transform: translateX(50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#vision {
+  min-height: 100vh;
+  background-color: var(--cohereRed);
+}
+
+.vision__box {
+  padding: 3rem;
+  color: white;
+  margin: 0 auto;
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#collab {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--cohereBlue);
+}
+
+.collaboration {
+  display: flex;
+  color: white;
+}
+
+.collaboration__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4rem;
+  text-align: justify;
+  width: 50%;
+}
+
+.collaboration__image {
+  background-image: url("../images/collab.jpg");
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  width: 50vw;
+  position: relative;
+}
+
+@media only screen and (max-width: 56.25em) {
+  #collab {
+    height: 100vh;
+  }
+  .collaboration {
+    flex-direction: column;
+    align-items: center;
+  }
+  .collaboration__image {
+    display: none;
+  }
+
+  .collaboration__text {
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2rem;
+  }
 }
 
 /* REPORTS PAGE */

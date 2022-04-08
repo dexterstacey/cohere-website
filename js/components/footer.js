@@ -28,7 +28,7 @@ class Footer extends HTMLElement {
 
                     <div class="col-md-4 text-center">
                         <h3>STAY IN TOUCH</h3>
-                        <button onclick="window.location='http://eepurl.com/hVLcTb';" class="btn btn-outline-dark  u-text-mid">Sign Up to Our Mailing List</button>
+                        <a href='http://eepurl.com/hVLcTb' class="btn btn-outline-dark  u-text-mid">Sign Up to Our Mailing List</a>
 
                     </div>
 
