@@ -117,7 +117,7 @@ const renderBlogs = async () => {
     html += `
       <div class="news__item" style="background-color: ${colors[index]};">
         <h4>${el.name}</h4>
-        <a href="https://news.wearecohere.org${el.permalink}"><img src="${el.image}" referrerpolicy="no-referrer"></a>
+        <a href="https://news.wearecohere.org${el.permalink}"><img style="width: 385px; height: 216px;" src="${el.image}" referrerpolicy="no-referrer"></a>
       </div>
       `;
   });
