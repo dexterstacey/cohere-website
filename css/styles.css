@@ -482,7 +482,7 @@ button {
 }
 
 #vision {
-  min-height: 100vh;
+  min-height: 75vh;
   background-color: var(--cohereRed);
 }
 
@@ -499,7 +499,7 @@ button {
 }
 
 #collab {
-  min-height: 100vh;
+  min-height: 75vh;
   width: 100%;
   background-color: var(--cohereBlue);
 }
@@ -507,6 +507,7 @@ button {
 .collaboration {
   display: flex;
   color: white;
+  height: 85vh;
 }
 
 .collaboration__text {
@@ -522,7 +523,7 @@ button {
   background-image: url("../images/collab.jpg");
   background-size: cover;
   background-position: center top;
-  height: 100vh;
+  height: 100%;
   width: 50vw;
   position: relative;
 }
