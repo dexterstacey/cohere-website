@@ -102,6 +102,8 @@ button {
 
 .hero__title {
   animation: moveInLeft 1s;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__paragraph {
@@ -119,7 +121,7 @@ button {
 }
 
 #we-are-cohere {
-  min-height: 100vh;
+  min-height: 75vh;
   background-color: var(--cohereOrange);
 }
 
@@ -155,7 +157,7 @@ button {
 
 #what-we-do {
   background-color: var(--cohereRed);
-  min-height: 100vh;
+  min-height: 75vh;
 }
 
 .work {
@@ -207,19 +209,19 @@ button {
 
 #smashing-cycle {
   background-color: var(--cohereBlue);
-  min-height: 100vh;
+  min-height: 75vh;
 }
 
 .dependency {
   display: flex;
-  height: 100vh;
+  height: 85vh;
   color: var(--cohereBlack);
   line-height: 3rem;
 }
 
 .dependency__image {
   width: 50vw;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -294,13 +296,13 @@ button {
 }
 
 #reframe {
-  min-height: 100vh;
+  min-height: 75vh;
   background-color: var(--cohereRed);
 }
 
 .reframe {
   display: flex;
-  height: 100vh;
+  height: 85vh;
   line-height: 3rem;
 }
 
@@ -320,7 +322,7 @@ button {
 }
 
 #news {
-  min-height: 100vh;
+  min-height: 75vh;
   background-color: var(--cohereBlack);
 }
 
