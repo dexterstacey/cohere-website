@@ -38,7 +38,7 @@
 
   <link rel="stylesheet" href="css/styles.css" />
 
-  <script src="js/script.js" defer></script>
+  <script type="module" src="js/script.js" defer></script>
   <script src="js/components/navbar.js" defer></script>
   <script src="js/components/footer.js" defer></script>
 </head>
@@ -244,15 +244,26 @@
   <section class="section" id="news">
     <div class="container-fluid">
       <h1 class="news__title">NEWS</h1>
-      <a class="news__title--secondary" href="https://news.wearecohere.org">
+      <a class="news__title--secondary" href="https://news.wearecohere.org/categories/news/">
         <h3>View all <span>&rarr;</span></h3>
       </a>
-      <div class="news__blog"></div>
+      <div class="news__blog c-news"></div>
       <div class="news__btn">
         <a href='https://cohere.enthuse.com/donate#!/'
           class="btn btn-outline-light btn-lg u-text-mid">
           Help us Smash the Cycle of Dependency
       </a>
+      </div>
+  </section>
+
+  <!-- Jobs -->
+  <section class="section" id="jobs">
+    <div class="container-fluid">
+      <h1 class="news__title">Jobs</h1>
+      <a class="news__title--secondary" href="https://news.wearecohere.org/categories/jobs/">
+        <h3>View all <span>&rarr;</span></h3>
+      </a>
+      <div class="news__blog c-jobs"></div>
       </div>
   </section>
 

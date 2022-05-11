@@ -396,6 +396,11 @@ button {
   padding: 1rem;
 }
 
+#jobs {
+  min-height: 75vh;
+  background-color: var(--cohereOrange);
+}
+
 /*
 =================
  HOME PAGE
