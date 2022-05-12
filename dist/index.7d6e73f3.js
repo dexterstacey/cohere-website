@@ -1,11 +1,10 @@
 class Navbar extends HTMLElement {
-  constructor() {
-    super();
-    this.backgroundColor = this.changeBackgroundColor();
-  }
-
-  connectedCallback() {
-    this.innerHTML = `
+    constructor(){
+        super();
+        this.backgroundColor = this.changeBackgroundColor();
+    }
+    connectedCallback() {
+        this.innerHTML = `
     <div class="container-fluid" style="background-color: ${this.backgroundColor};" > <!--; #282828 -->
       <div class="d-flex flex-row justify-content-end align-items-center">
           <!-- Donate Button -->
@@ -31,19 +30,14 @@ class Navbar extends HTMLElement {
       </div>
     </div>
     `;
-  }
-
-  changeBackgroundColor() {
-    const currentUrl = window.location.href.trim().toLocaleLowerCase();
-
-    if (currentUrl.includes("aboutus")) {
-      return "#ff6865";
-    } else if (currentUrl.includes("getinvolved")) {
-      return "#ff9343";
-    } else {
-      return "#72ccca";
     }
-  }
+    changeBackgroundColor() {
+        const currentUrl = window.location.href.trim().toLocaleLowerCase();
+        if (currentUrl.includes("aboutus")) return "#ff6865";
+        else if (currentUrl.includes("getinvolved")) return "#ff9343";
+        else return "#72ccca";
+    }
 }
-
 customElements.define("navbar-component", Navbar);
+
+//# sourceMappingURL=index.7d6e73f3.js.map

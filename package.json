@@ -1,19 +1,23 @@
 {
   "name": "cohere-website",
   "version": "1.0.0",
-  "description": "The main website",
-  "main": "index.js",
+  "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html aboutus.html getinvolved.html",
+    "build": "parcel build index.html aboutus.html getinvolved.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dexterstacey/cohere-website.git"
   },
-  "author": "Dexter & Sianwa",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dexterstacey/cohere-website/issues"
   },
-  "homepage": "https://github.com/dexterstacey/cohere-website#readme"
+  "homepage": "https://github.com/dexterstacey/cohere-website#readme",
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  }
 }
