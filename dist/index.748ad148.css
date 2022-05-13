@@ -520,6 +520,12 @@ button {
   padding: 5rem;
 }
 
+.reports__title {
+  color: var(--cohereBlack);
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .cbutton {
   text-transform: uppercase;
   background-color: var(--cohereRed);

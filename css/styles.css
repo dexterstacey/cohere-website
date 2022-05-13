@@ -563,6 +563,12 @@ button {
   padding: 5rem;
 }
 
+.reports__title {
+  color: var(--cohereBlack);
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /* CUSTOM BUTTON */
 .cbutton {
   border: none;
