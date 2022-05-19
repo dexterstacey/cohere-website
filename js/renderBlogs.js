@@ -16,14 +16,15 @@ export const renderBlogs = async (element = null) => {
   }
 
   const { data } = blogs.data.results;
+  console.log(data);
 
   // Limit to only 3 articles
   let firstThreeArticles;
   if (element.classList.contains("c-news")) {
-    firstThreeArticles = filterArr(data, "[news]");
+    firstThreeArticles = filterArr(data, "news");
     colors = ["#ff9343", "#72ccca", "#ff6865"];
   } else if (element.classList.contains("c-jobs")) {
-    firstThreeArticles = filterArr(data, "[jobs]");
+    firstThreeArticles = filterArr(data, "jobs");
     colors = ["#282828", "#ff6865", "#72ccca"];
   }
 
@@ -52,7 +53,7 @@ export const renderBlogs = async (element = null) => {
 
 const filterArr = (arr, category) => {
   const returnedArray = arr
-    .filter((blog) => blog.category === category)
+    .filter((blog) => blog.category.includes(category))
     .slice(0, 3);
 
   return returnedArray;
