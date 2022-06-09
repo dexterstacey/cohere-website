@@ -34,8 +34,8 @@ class Footer extends HTMLElement {
                     <style>.linkage a {text-decoration: none; color: #282828;}</style>
                     <div class="col-md-3 linkage text-center">
                         <h3>FOLLOW US</h3>
-                        <h3><a href="https://www.instagram.com/wearecohere_org/"><i class="bi bi-instagram me-3"></a></i><a href="https://twitter.com/WeAreCohere_Org"><i class="bi bi-twitter me-3"></i></a>
-                        <a href="https://www.linkedin.com/company/79070903"><i class="bi bi-linkedin me-3"></i></a><a href="https://www.facebook.com/CohereOrg"><i class="bi bi-facebook me-3"></i></a></h3>
+                        <h3><a href="https://www.instagram.com/wearecohere_org/" target="_blank"><i class="bi bi-instagram me-3"></a></i><a href="https://twitter.com/WeAreCohere_Org" target="_blank"><i class="bi bi-twitter me-3"></i></a>
+                        <a href="https://www.linkedin.com/company/79070903" target="_blank"><i class="bi bi-linkedin me-3"></i></a><a href="https://www.facebook.com/CohereOrg" target="_blank"><i class="bi bi-facebook me-3"></i></a></h3>
 
                     </div>
                 </div>

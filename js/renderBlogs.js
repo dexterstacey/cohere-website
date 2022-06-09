@@ -16,7 +16,6 @@ export const renderBlogs = async (element = null) => {
   }
 
   const { data } = blogs.data.results;
-  console.log(data);
 
   // Limit to only 3 articles
   let firstThreeArticles;
@@ -34,14 +33,16 @@ export const renderBlogs = async (element = null) => {
 
     html += `
         <div class="news__item" style="background-color: ${colors[index]};">
-          <h4 style="${colors[index] === "#282828" ? "color: white" : ""}">${
-      el.name
-    }</h4>
+          <div style="font-size: 1.6rem; font-weight: bold; display: inline-block; white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; ${
+            colors[index] === "#282828" ? "color: white" : ""
+          }">${el.name}</div>
           <a href="https://news.wearecohere.org${
             el.permalink
-          }"><img style="height: 216px;" src="${
-      el.image
-    }" referrerpolicy="no-referrer"></a>
+          }"><img style="height: 20rem; width: 100%;"
+          data-src="../images/blog-placeholder.jpg"
+           src="${el.image}" referrerpolicy="no-referrer"></a>
         </div>
         `;
   });

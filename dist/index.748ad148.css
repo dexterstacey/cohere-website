@@ -227,7 +227,7 @@ button {
 }
 
 #impact {
-  min-height: 100vh;
+  min-height: 85vh;
   background-color: #f7f7f7;
 }
 
@@ -276,13 +276,13 @@ button {
 }
 
 .reframe {
-  height: 85vh;
+  height: 75vh;
   line-height: 3rem;
   display: flex;
 }
 
 .reframe__text {
-  height: 70%;
+  height: 100%;
   flex-direction: column;
   justify-content: space-around;
   padding: 4rem;
@@ -297,7 +297,7 @@ button {
 }
 
 #news {
-  min-height: 75vh;
+  min-height: 55vh;
   background-color: var(--cohereBlack);
 }
 
@@ -305,7 +305,7 @@ button {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .news__title--secondary {
@@ -322,7 +322,7 @@ button {
 .news__blog {
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
 }
 
@@ -338,10 +338,11 @@ button {
 
 .news__item {
   text-align: center;
-  width: 100%;
+  width: 40rem;
+  height: 25rem;
   border-radius: 2px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 1rem;
   padding: 1rem;
   transition: all .2s;
@@ -365,12 +366,12 @@ button {
 
 .news__btn {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   margin: 0 auto !important;
 }
 
 #jobs {
-  min-height: 75vh;
+  min-height: 55vh;
   background-color: var(--cohereOrange);
 }
 

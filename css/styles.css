@@ -371,10 +371,11 @@ button {
   margin: 1rem;
 
   width: 40rem;
+  height: 25rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 
   transition: all 0.2s;
 }
