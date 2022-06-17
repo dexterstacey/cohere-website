@@ -682,4 +682,46 @@ button {
   }
 }
 
+.nav_bar {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 1rem;
+  display: flex;
+}
+
+.nav-bar--list {
+  flex-grow: .2;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar--link {
+  color: #fff;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.nav-bar--link:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav-bar--list-item {
+  transition: all .2s;
+}
+
+.nav-bar--list-item:hover {
+  cursor: pointer;
+  transform: scale(1.1)translateY(-.5rem);
+}
+
+.nav-bar--list-item:active, .nav-bar--list-item:focus {
+  transform: scale(1)translateY(.5rem);
+}
+
 /*# sourceMappingURL=index.748ad148.css.map */

@@ -6,29 +6,39 @@ class Navbar extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <div class="container-fluid" style="background-color: ${this.backgroundColor};" > <!--; #282828 -->
-      <div class="d-flex flex-row justify-content-end align-items-center">
-          <!-- Donate Button -->
-          <div class="col-md-1">
-              <a href="https://cohere.enthuse.com/donate#!/" style="text-decoration: none!important;"><h4 style="color: white;">Donate</h4></a>
-          </div>
+    <div class="nav" style="background-color: ${this.backgroundColor};" > <!--; #282828 -->
+      <div class="nav_bar">
+      <a href="./index.html">
+      <img class="nav_img" src="./images/Cohere-white.png" />
+      </a>
 
-          <!-- Dropdown Menu-->
+        <ul class="nav-bar--list">
+          <li class="nav-bar--list-item">
+            <a class="nav-bar--link" href="./index.html"><h4>Home</h4></a>
+          </li>
+          <li class="">
           <div class="col-md-1">
-              <h4 style="color:white;" class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Menu
-                  </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item u-text-mid" href="./aboutus.html">About Us</a></li>
-                <li><a class="dropdown-item u-text-mid" href="./getinvolved.html">Get Involved</a></li>
-                <li><a class="dropdown-item u-text-mid" href="./reports.html">Reports</a></li>
-                <li><a class="dropdown-item u-text-mid" href="https://news.wearecohere.org">News</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item u-text-mid" href="./index.html">Home</a></li>
-                </ul>
-              </h4>
-          </div>
+          <h4 style="color:white;" class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+              </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item u-text-mid" href="./aboutus.html">About Us</a></li>
+            <li><a class="dropdown-item u-text-mid" href="./reports.html">Reports</a></li>
+            </ul>
+          </h4>
+      </div>
+          </li>
+          <li class="nav-bar--list-item">
+            <a class="nav-bar--link" href="https://news.wearecohere.org"><h4>Blogs & News</h4></a>
+          </li>
+          <li class="nav-bar--list-item">
+            <a class="nav-bar--link" href="./getinvolved.html"><h4>Get Involved</h4></a>
+          </li>
+          <li class="nav-bar--list-item">
+            <a class="nav-bar--link" href="https://cohere.enthuse.com/donate#!/><h4>Donate</h4></a>
+          </li>
+        </ul>
       </div>
     </div>
     `;
