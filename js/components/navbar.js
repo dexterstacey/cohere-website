@@ -1,3 +1,4 @@
+// import img from "../../images/Cohere-white.png";
 class Navbar extends HTMLElement {
   constructor() {
     super();
@@ -9,7 +10,7 @@ class Navbar extends HTMLElement {
     <div class="nav" style="background-color: ${this.backgroundColor};" > <!--; #282828 -->
       <div class="nav_bar">
       <a href="./index.html">
-      <img class="nav_img" src="./images/Cohere-white.png" />
+      <img class="nav_img" src="../../images/Cohere-white.png" />
       </a>
 
         <ul class="nav-bar--list">
@@ -36,7 +37,7 @@ class Navbar extends HTMLElement {
             <a class="nav-bar--link" href="./getinvolved.html"><h4>Get Involved</h4></a>
           </li>
           <li class="nav-bar--list-item">
-            <a class="nav-bar--link" href="https://cohere.enthuse.com/donate#!/><h4>Donate</h4></a>
+            <a class="nav-bar--link" href="https://cohere.enthuse.com/donate#!"><h4>Donate</h4></a>
           </li>
         </ul>
       </div>

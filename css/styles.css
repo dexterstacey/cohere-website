@@ -744,13 +744,13 @@ button {
 
 /* NAVIGATION BAR */
 .nav {
-  height: 10vh;
+  height: 11vh;
 }
 
 .nav_bar {
   display: flex;
   width: 100%;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 1rem;
