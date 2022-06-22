@@ -134,7 +134,7 @@ button {
 }
 
 .intro__header {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .intro__image {
@@ -257,7 +257,7 @@ button {
   color: var(--cohereOrange);
   text-transform: uppercase;
   text-align: center;
-  margin: 2rem 0;
+  /* margin: 1rem 0; */
 }
 
 .impact__grid {
