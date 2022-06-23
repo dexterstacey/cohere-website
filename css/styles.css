@@ -195,6 +195,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .work__item--image {
@@ -202,9 +203,37 @@ button {
   transition: all 0.2s;
 }
 
-.work__item--image:hover {
+.work__item--caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.7rem !important;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+
+.work__item:hover {
   cursor: pointer;
-  transform: translateY(-2px);
+}
+
+.work__item:hover .work__item--caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.work__item:hover .work__item--image {
+  cursor: pointer;
+  transform: scale(1.02);
+  filter: blur(2px);
+}
+
+.work__item:hover .work__item--title {
+  transform: scale(1.02);
 }
 
 #smashing-cycle {
@@ -303,8 +332,7 @@ button {
 
 .reframe {
   display: flex;
-  /* height: 85vh; */
-  height: 75vh;
+  height: 85vh;
   line-height: 3rem;
 }
 
