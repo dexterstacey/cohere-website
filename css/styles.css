@@ -205,7 +205,8 @@ button {
 
 .work__item--caption {
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
+  top: 65%;
   left: 50%;
   transform: translate(-50%, 20%);
   text-transform: uppercase;
