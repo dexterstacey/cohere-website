@@ -38,8 +38,8 @@
 
   <link rel="stylesheet" href="css/styles.css" />
 
-  <script type="module" src="js/script.js" defer></script>
   <script src="js/components/navbar.js" defer></script>
+  <script type="module" src="js/script.js" defer></script>
   <script src="js/components/footer.js" defer></script>
 </head>
 
@@ -61,9 +61,9 @@
       <h1>
         TRANSFER POWER
       </h1>
-        <h1>
+      <h1>
           TRANSFORM COMMUNITIES
-        </h1>
+      </h1>
     </div>
 
     <div class="hero__paragraph col-md-5 ps-5">
@@ -80,56 +80,37 @@
   </div>
   </div>
 
-  <!-- We Are Cohere-->
-  <section class="section section--hidden" id="we-are-cohere">
-    <h1 class="text-center intro__header" style="color: white">
-      WE ARE COHERE
-    </h1>
-    <div class="intro u-center">
-      <img class="intro__image" src="./images/TagXP.png" />
-      <div class="col-md-7 text-center">
-        <p class="lead text-center pb-5" style="color: white">
-          At the beginning of 2022 Xavier Project joined forces with Urban
-          Refugees to become COHERE. We realised that by sharing resources and
-          expertise we could do more to support the growth of refugee-led
-          organisations, all whilst reducing costs. This way more money can go
-          directly to our refugee-led partners. We want them to be in the
-          driving seat. Together we want to smash the cycle of dependency. We
-          hope you’ll join us.
-        </p>
-        <a href="#what-we-do">
-          <img class="chevron" src="./images/chevron.png" />
-        </a>
-      </div>
-      <img class="intro__image" src="./images/TagUR.png" />
-    </div>
-  </section>
-
   <!-- What we Do -->
   <section class="section section--hidden" id="what-we-do">
     <div class="work">
       <h1 class="text-center" style="color: white">WHAT WE DO</h1>
+      <p class="text-center" style="color: white; width: 60%; margin: 0 auto">We partner with refugee-led organisations so they can transform their communities by offering critical services, skills training and opportunities. We do this through</p>
       <div class="work__elements">
         <div class="work__item">
-          <h2>FUNDING</h2>
+          <h2 class="work__item--title">FUNDING</h2>
           <img class="work__item--image" src="./images/wwd_funding.png" alt="Refugees community direct funding" />
+          <p class="work__item--caption">Create funding opportunities for RLOs and encourage donors to fund directly.</p>
         </div>
         <div class="work__item">
-          <h2>CAPACITY</h2>
+          <h2 class="work__item--title">CAPACITY</h2>
           <img class="work__item--image" src="./images/wwd_capacity.png" alt="Localisation training for refugees" />
+          <p class="work__item--caption">Training to ensure that RLOs can effectively respond to the needs of their communities.</p>
         </div>
         <div class="work__item">
-          <h2>COORDINATION</h2>
+          <h2 class="work__item--title">COORDINATION</h2>
           <img class="work__item--image" src="./images/wwd_coordination.png" alt="Refugee leaders meeting" />
+          <p class="work__item--caption">Showcase the work of RLOs and connect them with other organisations.
+          </p>
         </div>
         <div class="work__item">
-          <h2>ADVOCACY</h2>
+          <h2 class="work__item--title">ADVOCACY</h2>
           <img class="work__item--image" src="./images/wwd_advocacy.png" alt="Refugee voices" />
+          <p class="work__item--caption">Influence donor practices, and support RLOs to tell their stories</p>
         </div>
       </div>
       <div class="row d-flex justify-content-center pb-4">
         <div class="col-7 text-center">
-          <a href="#smashing-cycle">
+          <a href="#impact">
             <img class="chevron" src="./images/chevron.png" />
           </a>
         </div>
@@ -137,34 +118,7 @@
     </div>
   </section>
 
-  <!-- Smashing Cycle-->
-  <section class="section section--hidden" id="smashing-cycle">
-    <div class="dependency">
-      <img src="./images/cycle.jpg" alt="" class="dependency__image" />
-
-      <div class="dependency__text">
-        <h2 class="pt-5">
-          HELP US SMASH THE CYCLE <br />
-          OF DEPENDENCY!
-        </h2>
-        <p class="lead">
-          Your contribution enables refugees to help themselves to a better
-          future on their own terms. So whether it’s going to school, learning
-          a new skill or creating a difference for the local community, it’s
-          about being able to make their own choices towards a better future.
-          And we hope you choose to help.
-        </p>
-        <a href='https://cohere.enthuse.com/donate#!/'
-          class="btn btn-lg btn-outline-light u-text-mid" style="width: 20%">
-          Donate
-      </a>
-        <a href="#impact">
-          <img class="chevron" src="./images/chevron.png" />
-        </a>
-      </div>
-    </div>
-  </section>
-
+  <!-- Impact -->
   <section class="section section--hidden" id="impact">
     <div class="container-fluid pt-3">
       <h1 class="impact__header">IMPACT</h1>
@@ -213,13 +167,68 @@
 
       <div class="row d-flex justify-content-center pb-4">
         <div class="col-7 text-center">
-          <a href="#reframe">
+          <a href="#we-are-cohere">
             <img class="chevron" src="./images/chevronorange.png" style="width: 10%" />
           </a>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- We Are Cohere-->
+  <section class="section section--hidden" id="we-are-cohere">
+    <h1 class="text-center intro__header" style="color: white">
+      WE ARE COHERE
+    </h1>
+    <div class="intro u-center">
+      <img class="intro__image" src="./images/TagXP.png" />
+      <div class="col-md-7 text-center">
+        <p class="lead text-center pb-5" style="color: white">
+          At the beginning of 2022 Xavier Project joined forces with Urban
+          Refugees to become COHERE. We realised that by sharing resources and
+          expertise we could do more to support the growth of refugee-led
+          organisations, all whilst reducing costs. This way more money can go
+          directly to our refugee-led partners. We want them to be in the
+          driving seat. Together we want to smash the cycle of dependency. We
+          hope you’ll join us.
+        </p>
+        <a href="#smashing-cycle">
+          <img class="chevron" src="./images/chevron.png" />
+        </a>
+      </div>
+      <img class="intro__image" src="./images/TagUR.png" />
+    </div>
+  </section>
+
+
+  <!-- Smashing Cycle-->
+  <section class="section section--hidden" id="smashing-cycle">
+    <div class="dependency">
+      <img src="./images/cycle.jpg" alt="" class="dependency__image" />
+
+      <div class="dependency__text">
+        <h2 class="pt-5">
+          HELP US SMASH THE CYCLE <br />
+          OF DEPENDENCY!
+        </h2>
+        <p class="lead">
+          Your contribution enables refugees to help themselves to a better
+          future on their own terms. So whether it’s going to school, learning
+          a new skill or creating a difference for the local community, it’s
+          about being able to make their own choices towards a better future.
+          And we hope you choose to help.
+        </p>
+        <a href='https://cohere.enthuse.com/donate#!/'
+          class="btn btn-lg btn-outline-light u-text-mid" style="width: 20%">
+          Donate
+      </a>
+        <a href="#reframe">
+          <img class="chevron" src="./images/chevron.png" />
+        </a>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Reframe-->
   <section class="section section--hidden" id="reframe">
@@ -250,14 +259,15 @@
       <div class="news__blog c-news"></div>
       <div class="news__btn">
         <a href='https://cohere.enthuse.com/donate#!/'
-          class="btn btn-outline-light btn-lg u-text-mid">
+          class="btn btn-outline-light btn-lg u-text-mid"
+          style="padding: 1rem;">
           Help us Smash the Cycle of Dependency
       </a>
       </div>
   </section>
 
   <!-- Jobs -->
-  <section class="section" id="jobs">
+  <!--<section class="section" id="jobs">
     <div class="">
       <h1 class="news__title">Jobs</h1>
       <a class="news__title--secondary" href="https://news.wearecohere.org/categories/jobs/">
@@ -265,7 +275,7 @@
       </a>
       <div class="news__blog c-jobs"></div>
       </div>
-  </section>
+  </section>-->
 
   <!-- Contacts / Footer -->
   <footer-component></footer-component>

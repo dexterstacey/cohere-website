@@ -1,6 +1,7 @@
 "use strict";
 import { fetchBlogs } from "./fetchBlogs.js";
 import { loadMessage } from "./utilities.js";
+import { imgObserver } from "./lazyLoading.js";
 
 export const renderBlogs = async (element = null) => {
   let html = ``;
@@ -41,8 +42,8 @@ export const renderBlogs = async (element = null) => {
           <a href="https://news.wearecohere.org${
             el.permalink
           }"><img style="height: 20rem; width: 100%;"
-          data-src="../images/blog-placeholder.jpg"
-           src="${el.image}" referrerpolicy="no-referrer"></a>
+          src="../images/load-icon.png"
+          data-src="${el.image}" referrerpolicy="no-referrer"></a>
         </div>
         `;
   });
@@ -50,6 +51,8 @@ export const renderBlogs = async (element = null) => {
   element.innerHTML = "";
   // insert blogs under the news div
   element.insertAdjacentHTML("afterbegin", html);
+
+  lazyLoadBlog();
 };
 
 const filterArr = (arr, category) => {
@@ -58,4 +61,12 @@ const filterArr = (arr, category) => {
     .slice(0, 3);
 
   return returnedArray;
+};
+
+const lazyLoadBlog = () => {
+  const imgTargets = document.querySelectorAll("img[data-src]");
+
+  imgTargets.forEach((img) => {
+    imgObserver.observe(img);
+  });
 };
