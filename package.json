@@ -22,7 +22,6 @@
     "parcel-transformer-html-datasrc": "^1.3.3"
   },
   "dependencies": {
-    "core-js": "^3.23.3",
-    "regenerator-runtime": "^0.13.9"
+    "core-js": "^3.23.3"
   }
 }
