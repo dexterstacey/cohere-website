@@ -1,5 +1,7 @@
 "use strict";
 
+import "regenerator-runtime/runtime";
+import "core-js/stable";
 import { renderBlogs } from "./renderBlogs.js";
 import { sectionObserver, imgObserver } from "./lazyLoading.js";
 
