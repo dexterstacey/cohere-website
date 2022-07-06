@@ -183,7 +183,6 @@ button {
 }
 
 .work__item--caption {
-  text-transform: lowercase;
   color: #fff;
   text-align: center;
   opacity: 0;
