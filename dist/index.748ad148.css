@@ -437,14 +437,15 @@ button {
 }
 
 .team__heading {
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 .team__description {
+  text-align: center;
   margin-bottom: 3rem;
   line-height: 3rem;
-  font-size: 1.6rem !important;
 }
 
 #about-us {
