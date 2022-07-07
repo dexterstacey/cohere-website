@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel index.html aboutus.html getinvolved.html reports.html",
-    "build": "parcel build index.html aboutus.html getinvolved.html reports.html"
+    "start": "parcel index.html aboutus.html getinvolved.html reports.html team.html coordination.html funding.html capacity.html advocacy.html",
+    "build": "parcel build index.html aboutus.html getinvolved.html reports.html team.html coordination.html funding.html capacity.html advocacy.html"
   },
   "repository": {
     "type": "git",

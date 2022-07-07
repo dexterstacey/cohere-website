@@ -443,7 +443,7 @@ button {
 }
 
 .team__description {
-  text-align: center;
+  text-align: justify;
   margin-bottom: 3rem;
   line-height: 3rem;
 }
@@ -809,9 +809,8 @@ button {
   }
 
   .nav_btn {
-    height: 5rem;
-    width: 7rem;
     padding-right: 3rem;
+    font-size: 6rem;
     transition: all .2s;
     display: block;
   }

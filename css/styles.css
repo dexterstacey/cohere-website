@@ -494,7 +494,9 @@ button {
   /* font-size: 1.6rem !important; */
   line-height: 3rem;
   margin-bottom: 3rem;
-  text-align: center;
+  /* width: 70%; */
+  /* margin: 0 auto; */
+  text-align: justify;
 }
 
 /* ABOUT US PAGE */
@@ -877,8 +879,9 @@ button {
 
   .nav_btn {
     display: block;
-    height: 5rem;
-    width: 7rem;
+    font-size: 6rem;
+    /* height: 5rem; */
+    /* width: 7rem */
     padding-right: 3rem;
     transition: all 0.2s;
   }

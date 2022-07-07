@@ -1,11 +1,10 @@
 class Navbar extends HTMLElement {
-  constructor() {
-    super();
-    this.backgroundColor = this.changeBackgroundColor();
-  }
-
-  connectedCallback() {
-    this.innerHTML = `
+    constructor(){
+        super();
+        this.backgroundColor = this.changeBackgroundColor();
+    }
+    connectedCallback() {
+        this.innerHTML = `
     <div class="nav" style="background-color: ${this.backgroundColor};" > <!--; #282828 -->
       <div class="nav_bar">
         <a href="./index.html">
@@ -80,43 +79,31 @@ class Navbar extends HTMLElement {
       </div>
     </div>
     `;
-
-    this.targetNavigation();
-  }
-
-  changeBackgroundColor() {
-    const currentUrl = window.location.href.trim().toLocaleLowerCase();
-
-    if (currentUrl.includes("aboutus")) {
-      return "#ff6865";
-    } else if (currentUrl.includes("getinvolved")) {
-      return "#ff9343";
-    } else {
-      return "#72ccca";
+        this.targetNavigation();
     }
-  }
-
-  targetNavigation() {
-    const targetNode = document.querySelector(".nav_btn");
-    const navBackground = document.querySelector(".nav_background");
-    const closeBtn = document.querySelector(".nav_background--close");
-
-    if (targetNode) {
-      targetNode.addEventListener("click", (e) => {
-        navBackground.style.width = "80%";
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-          navBackground.style.width = "";
+    changeBackgroundColor() {
+        const currentUrl = window.location.href.trim().toLocaleLowerCase();
+        if (currentUrl.includes("aboutus")) return "#ff6865";
+        else if (currentUrl.includes("getinvolved")) return "#ff9343";
+        else return "#72ccca";
+    }
+    targetNavigation() {
+        const targetNode = document.querySelector(".nav_btn");
+        const navBackground = document.querySelector(".nav_background");
+        const closeBtn = document.querySelector(".nav_background--close");
+        if (targetNode) {
+            targetNode.addEventListener("click", (e)=>{
+                navBackground.style.width = "80%";
+            });
+            document.addEventListener("keydown", (e)=>{
+                if (e.key === "Escape") navBackground.style.width = "";
+            });
+            closeBtn.addEventListener("click", (e)=>{
+                navBackground.style.width = "";
+            });
         }
-      });
-
-      closeBtn.addEventListener("click", (e) => {
-        navBackground.style.width = "";
-      });
     }
-  }
 }
-
 customElements.define("navbar-component", Navbar);
+
+//# sourceMappingURL=funding.7d6e73f3.js.map
