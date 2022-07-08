@@ -621,7 +621,7 @@ const lazyLoadBlog = ()=>{
     });
 };
 
-},{"./fetchBlogs.js":"jPcPM","./utilities.js":"f4wib","./lazyLoading.js":"4EV9h","../images/load-icon.png":"gjf2d","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jPcPM":[function(require,module,exports) {
+},{"./fetchBlogs.js":"jPcPM","./utilities.js":"f4wib","./lazyLoading.js":"4EV9h","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../images/load-icon.png":"gjf2d"}],"jPcPM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "fetchBlogs", ()=>fetchBlogs);
