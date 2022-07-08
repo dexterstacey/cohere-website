@@ -927,7 +927,7 @@ button {
 
 /* FUNDING */
 #howwedoit {
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .howwedoit {
