@@ -717,6 +717,11 @@ button {
   margin: 0 auto !important;
 }
 
+.u-paragraph {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.6rem !important;
+}
+
 /* PADDING UTILITIES */
 
 /* CHEVRON ANIMATION */
@@ -918,4 +923,68 @@ button {
 .nav-bar--list-item:active,
 .nav-bar--list-item:focus {
   transform: scale(1) translateY(0.3rem);
+}
+
+/* FUNDING */
+#howwedoit {
+  height: 90vh;
+}
+
+.howwedoit {
+  height: 100%;
+  padding: 3rem;
+}
+
+.howwedoit__image {
+  height: 100%;
+  width: 100%;
+}
+
+/* GRID SYSTEM */
+.c-row {
+  max-width: 114rem;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+[class^="custom-col-"] {
+  flex: 1;
+}
+
+[class^="custom-col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+[class^="custom-col-2-"] {
+  flex: 2 0 6rem;
+}
+
+[class^="custom-col-3-"] {
+  flex: 2 0 12rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .c-row {
+    flex-direction: column;
+    max-width: 50rem;
+  }
+
+  .c-row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+
+  [class^="custom-col-"] {
+    width: 100% !important;
+  }
+
+  [class^="custom-col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
 }
