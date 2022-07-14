@@ -443,7 +443,7 @@ button {
 }
 
 .team__description {
-  text-align: center;
+  text-align: justify;
   margin-bottom: 3rem;
   line-height: 3rem;
 }
@@ -656,6 +656,11 @@ button {
   margin: 0 auto !important;
 }
 
+.u-paragraph {
+  font-family: Space Grotesk, sans-serif;
+  font-size: 1.6rem !important;
+}
+
 @keyframes updown {
   0%, 100% {
     transform: translateY(0);
@@ -809,9 +814,8 @@ button {
   }
 
   .nav_btn {
-    height: 5rem;
-    width: 7rem;
     padding-right: 3rem;
+    font-size: 6rem;
     transition: all .2s;
     display: block;
   }
@@ -847,6 +851,86 @@ button {
 
 .nav-bar--list-item:active, .nav-bar--list-item:focus {
   transform: scale(1)translateY(.3rem);
+}
+
+.capacity {
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  display: flex;
+}
+
+.capacity__row {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.capacity__row--img {
+  height: 15rem;
+  width: 15rem;
+}
+
+#howwedoit {
+  min-height: 90vh;
+}
+
+.howwedoit {
+  height: 100%;
+  padding: 3rem;
+}
+
+.howwedoit__image {
+  height: 100%;
+  width: 100%;
+}
+
+.c-row {
+  max-width: 114rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+}
+
+.c-row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+[class^="custom-col-"] {
+  flex: 1;
+}
+
+[class^="custom-col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+[class^="custom-col-2-"] {
+  flex: 2 0 6rem;
+}
+
+[class^="custom-col-3-"] {
+  flex: 2 0 12rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .c-row {
+    max-width: 50rem;
+    flex-direction: column;
+  }
+
+  .c-row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+
+  [class^="custom-col-"] {
+    width: 100% !important;
+  }
+
+  [class^="custom-col-"]:not(:last-child) {
+    margin-bottom: 6rem;
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=index.748ad148.css.map */
