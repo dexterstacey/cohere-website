@@ -853,6 +853,25 @@ button {
   transform: scale(1)translateY(.3rem);
 }
 
+.capacity {
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  display: flex;
+}
+
+.capacity__row {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.capacity__row--img {
+  height: 15rem;
+  width: 15rem;
+}
+
 #howwedoit {
   min-height: 90vh;
 }
