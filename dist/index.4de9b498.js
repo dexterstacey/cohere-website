@@ -560,8 +560,6 @@ parcelHelpers.export(exports, "renderBlogs", ()=>renderBlogs);
 var _fetchBlogsJs = require("./fetchBlogs.js");
 var _utilitiesJs = require("./utilities.js");
 var _lazyLoadingJs = require("./lazyLoading.js");
-var _loadIconPng = require("../images/load-icon.png");
-var _loadIconPngDefault = parcelHelpers.interopDefault(_loadIconPng);
 "use strict";
 const renderBlogs = async (element = null)=>{
     let html = ``;
@@ -600,7 +598,7 @@ const renderBlogs = async (element = null)=>{
           overflow: hidden;
           text-overflow: ellipsis; ${colors[index] === "#282828" ? "color: white" : ""}">${el.name}</div>
           <a href="https://news.wearecohere.org${el.permalink}"><img style="height: 20rem; width: 100%;"
-          src="${0, _loadIconPngDefault.default}"
+          src="../images/load-icon.png"
           data-src="${el.image}" referrerpolicy="no-referrer"></a>
         </div>
         `;
@@ -621,7 +619,7 @@ const lazyLoadBlog = ()=>{
     });
 };
 
-},{"./fetchBlogs.js":"jPcPM","./utilities.js":"f4wib","./lazyLoading.js":"4EV9h","../images/load-icon.png":"gjf2d","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jPcPM":[function(require,module,exports) {
+},{"./fetchBlogs.js":"jPcPM","./utilities.js":"f4wib","./lazyLoading.js":"4EV9h","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jPcPM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "fetchBlogs", ()=>fetchBlogs);
@@ -720,43 +718,6 @@ const imgObserver = new IntersectionObserver(loadImage, {
     threshold: 0.5
 });
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gjf2d":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("3ninf") + "load-icon.1f3864b3.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}]},["2Rsls","4pp4s"], "4pp4s", "parcelRequiref153")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["2Rsls","4pp4s"], "4pp4s", "parcelRequiref153")
 
 //# sourceMappingURL=index.4de9b498.js.map

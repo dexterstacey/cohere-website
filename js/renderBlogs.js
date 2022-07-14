@@ -2,7 +2,6 @@
 import { fetchBlogs } from "./fetchBlogs.js";
 import { loadMessage } from "./utilities.js";
 import { imgObserver } from "./lazyLoading.js";
-import img from "../images/load-icon.png";
 
 export const renderBlogs = async (element = null) => {
   let html = ``;
@@ -43,7 +42,7 @@ export const renderBlogs = async (element = null) => {
           <a href="https://news.wearecohere.org${
             el.permalink
           }"><img style="height: 20rem; width: 100%;"
-          src="${img}"
+          src="../images/load-icon.png"
           data-src="${el.image}" referrerpolicy="no-referrer"></a>
         </div>
         `;
