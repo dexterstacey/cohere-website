@@ -2,11 +2,14 @@
 
 import { renderBlogs } from "./renderBlogs.js";
 import { sectionObserver, imgObserver } from "./lazyLoading.js";
+import { slider } from "./slider.js";
 
 //DOM ELEMENTS
 const newsBlog = document.querySelectorAll(".news__blog");
 const imgTargets = document.querySelectorAll("img[data-src]");
 const allSections = document.querySelectorAll(".section");
+
+const slides = document.querySelectorAll(".slide");
 
 // LAZY LOADING IMAGES SECTION
 imgTargets.forEach((img) => {
@@ -24,4 +27,9 @@ if (newsBlog) {
   newsBlog.forEach((news) => {
     renderBlogs(news);
   });
+}
+
+if (slides.length > 0) {
+  slider();
+} else {
 }
