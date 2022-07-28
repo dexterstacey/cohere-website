@@ -42,7 +42,7 @@ export const renderBlogs = async (element = null) => {
           <a href="https://news.wearecohere.org${
             el.permalink
           }"><img style="height: 20rem; width: 100%;"
-          src="../images/load-icon.png"
+          src=""
           data-src="${el.image}" referrerpolicy="no-referrer"></a>
         </div>
         `;

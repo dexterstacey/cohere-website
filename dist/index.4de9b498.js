@@ -601,7 +601,7 @@ const renderBlogs = async (element = null)=>{
           overflow: hidden;
           text-overflow: ellipsis; ${colors[index] === "#282828" ? "color: white" : ""}">${el.name}</div>
           <a href="https://news.wearecohere.org${el.permalink}"><img style="height: 20rem; width: 100%;"
-          src="../images/load-icon.png"
+          src=""
           data-src="${el.image}" referrerpolicy="no-referrer"></a>
         </div>
         `;
