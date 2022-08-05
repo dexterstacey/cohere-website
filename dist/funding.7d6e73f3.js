@@ -11,7 +11,6 @@ class Navbar extends HTMLElement {
           <div class="col-md-1">
               <a href="https://cohere.enthuse.com/donate#!/" style="text-decoration: none!important;"><h4 style="color: white;">Donate</h4></a>
           </div>
-
           <!-- Dropdown Menu-->
           <div class="col-md-1">
               <h4 style="color:white;" class="nav-item dropdown">
