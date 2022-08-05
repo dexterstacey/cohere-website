@@ -844,6 +844,12 @@ button {
   font-size: 1.3rem !important;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .u-container {
+    text-align: center;
+  }
+}
+
 @keyframes updown {
   0%, 100% {
     transform: translateY(0);

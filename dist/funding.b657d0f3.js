@@ -6,7 +6,7 @@ class Footer extends HTMLElement {
         this.innerHTML = `
     <section id="footer">
         <div class="container-fluid" style="background-color: #72ccca;">
-            <div class="container">
+            <div class="container u-container">
                 <div class="d-flex justify-content-between row pt-3">
                     <div class="col-md-2">
                         <h3>CONTACT US</h3>

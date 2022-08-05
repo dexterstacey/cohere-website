@@ -959,6 +959,12 @@ button {
   text-align: center;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .u-container {
+    text-align: center;
+  }
+}
+
 /* PADDING UTILITIES */
 
 /* CHEVRON ANIMATION */
