@@ -553,9 +553,9 @@ class Navbar extends HTMLElement {
                       Menu
                   </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item u-text-mid" href="./aboutus.html">About Us</a></li>
-                <li><a class="dropdown-item u-text-mid" href="./getinvolved.html">Get Involved</a></li>
-                <li><a class="dropdown-item u-text-mid" href="./reports.html">Reports</a></li>
+                <li><a class="dropdown-item u-text-mid" href="./aboutus">About Us</a></li>
+                <li><a class="dropdown-item u-text-mid" href="./getinvolved">Get Involved</a></li>
+                <li><a class="dropdown-item u-text-mid" href="./reports">Reports</a></li>
                 <li><a class="dropdown-item u-text-mid" href="./team">Team</a></li>
                 <li><a class="dropdown-item u-text-mid" href="https://news.wearecohere.org">News</a></li>
                 <li><hr class="dropdown-divider"></li>
