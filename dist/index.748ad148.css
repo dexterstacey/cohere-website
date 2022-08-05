@@ -833,13 +833,15 @@ button {
 }
 
 .u-footer {
+  width: 70%;
   border-top: 1px solid #0000004b;
-  margin-top: 1rem;
+  margin: 1rem auto;
   padding: 2rem;
 }
 
 .u-footer p {
-  font-size: 1.6rem !important;
+  text-align: center;
+  font-size: 1.3rem !important;
 }
 
 @keyframes updown {

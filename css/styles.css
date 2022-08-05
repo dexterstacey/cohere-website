@@ -948,11 +948,14 @@ button {
 .u-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.295);
   padding: 2rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  margin: 1rem auto;
+  width: 70%;
 }
 
 .u-footer p {
-  font-size: 1.6rem !important;
+  font-size: 1.3rem !important;
+  text-align: center;
 }
 
 /* PADDING UTILITIES */
