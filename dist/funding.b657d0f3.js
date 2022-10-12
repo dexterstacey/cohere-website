@@ -27,7 +27,7 @@ class Footer extends HTMLElement {
 
                     <div class="col-md-2">
                         <h3>_</h3>
-                        <p><b>Dean Farm, Oaksey,</b><br />
+                        <p><b>UK office</b><br/>Dean Farm, Oaksey,<br />
                         Malmesbury, Wilts, <br />
                         SN16 9SB, UK
                         </p>
