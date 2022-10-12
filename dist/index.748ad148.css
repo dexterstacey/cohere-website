@@ -823,6 +823,32 @@ button {
   font-size: 1.6rem !important;
 }
 
+.u-email {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .5s;
+  font-size: 1.7rem !important;
+}
+
+.u-email:hover {
+  color: inherit;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.u-email-link {
+  color: var(--cohereBlue);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.7rem !important;
+}
+
+.u-email-link:hover {
+  color: var(--cohereBlue);
+  cursor: pointer;
+}
+
 .u-center {
   margin: 0 auto !important;
 }

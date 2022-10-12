@@ -542,8 +542,9 @@ class Footer extends HTMLElement {
         <div class="container-fluid" style="background-color: #72ccca;">
             <div class="container u-container">
                 <div class="d-flex justify-content-between row pt-3">
+                <h3>CONTACT US</h3>
                     <div class="col-md-2">
-                        <h3>CONTACT US</h3>
+                        <a href="mailto: info@wearecohere.org" class="u-email">info@wearecohere.org</a>
                         <p><b>Kenya Office</b><br />
                         Wamagata Court<br /> 
                         Woodley, Nairobi <br /> 
